@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing:border-box;
 }
-body{
+html, body{
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: #bbbbbb;
     color: #111;
     overflow-x: hidden;
     overflow-y: auto;
-    
+    max-width: 100%;
+    width: 100%;
 }
 .navbar{
     display: flex;
