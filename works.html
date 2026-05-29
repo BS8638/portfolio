@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works</title>
+    <style>
+         *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html, body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #bbbbbb;
+    color: #111;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    width: 100%;
+}
+.logo{
+    font-size: 30px;
+    font-family:serif;
+    font-weight: bold;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap:clamp(20px,5vw,200px);
+}
+.nav-list a{
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+    font-weight: 500;
+}
+.nav-list a.active,.nav-list a:hover{
+    color: #000;
+}
+.contact-btn{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#works{
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+#works h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;  
+}
+.work-box{
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.work-box:hover{
+    transform: translate(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.work-box h3{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #111;
+}
+.work-box p{
+    font-size: 16px;
+    color: #555;
+
+}
+@media (max-width: 768px) {
+    
+   
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 4%;
+        text-align: center;
+    }
+    .nav-list {
+        gap: 20px;
+        padding: 0;
+    }
+    .nav-list a {
+        font-size: 16px;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <section class="navbar">
+            <div class="logo">
+                B.S
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" target="_blank">About</a>
+                    </li>
+                    <li>
+                        <a href="works.html">Works</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <button class="contact-btn">Contact.Us</button>
+        </section>
+    </header>
+    <section id="works">
+    <h2>My Works</h2>
+    <div class="container">
+   <div class="work-box">
+    <h3>Collage website</h3>
+    <p>Responsive college  website created using HTML,CSS and JavaScript.</p>
+   </div>
+   <div class="work-box">
+    <h3>Portfolio Website </h3>
+    <p>Personal portfolio website with modern Ul and responsive design. </p>
+   </div>
+   <div class="work-box">
+    <h3>Landing Page Design</h3>
+    <p>Creative landing page design for practice and fronted improvement.</p>
+   </div>
+   </div>
+   </section>
+</body>
+</html>
